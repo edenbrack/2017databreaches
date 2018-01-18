@@ -180,6 +180,7 @@ d3.csv("breach_level_index.csv", function (error, data) {
 
 	// Add the x axis
 	svg.append("g")
+		.style("font", "14px sans-serif")
 		.attr("transform", "translate(0," + height + ")")
 		.call(d3.axisBottom(x)
 			.tickFormat(function (d) {
@@ -188,6 +189,7 @@ d3.csv("breach_level_index.csv", function (error, data) {
 
 	// Add the y axis
 	svg.append("g")
+		.style("font", "14px sans-serif")
 		.call(d3.axisLeft(y));
 
 });
